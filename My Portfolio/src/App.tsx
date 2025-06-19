@@ -7,10 +7,10 @@ function App() {
     return (
         <>
             <Navbar />
-            <section className="min-h-screen">
+            <section className="sm:min-h-screen">
                 <HeaderJumbotron />
             </section>
-            <section className="min-h-screen bg-gray-800">
+            <section className="sm:min-h-screen bg-gray-800">
                 <Jumbotron />
             </section>
         </>

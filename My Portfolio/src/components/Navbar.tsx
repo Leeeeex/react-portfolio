@@ -8,7 +8,7 @@ const Navbar = () => {
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 {/* Logo */}
                 <div className="flex">
-                    <span className="flex items-center text-2xl text-white font-medium">
+                    <span className="flex items-center text-2xl text-gray-900 font-bold">
                         LEX<span className="text-red-600 mx-2">.</span>LOPEZ
                     </span>
                 </div>
@@ -51,7 +51,7 @@ const Navbar = () => {
                         isMobileMenuOpen ? "flex" : "hidden"
                     } flex-col py-2 rounded-full md:flex md:flex-row items-start md:items-center justify-between w-full md:w-auto md:order-1 mt-4 md:mt-0`}
                 >
-                    <ul className="flex flex-col md:flex-row md:space-x-8 p-4 rounded-lg border border-white sm:border-none md:bg-transparent text-white text-lg font-medium w-full md:w-auto">
+                    <ul className="flex flex-col md:flex-row md:space-x-8 p-4 rounded-lg border border-white sm:border-none md:bg-transparent text-gray-900 text-lg font-semibold w-full md:w-auto">
                         <li>
                             <a
                                 href="#"
