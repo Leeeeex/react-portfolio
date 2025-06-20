@@ -1,8 +1,11 @@
-import React from "react";
+import { useState } from "react";
 import HeaderImage from "../assets/img/lex_picture.png";
 import DownloadCVButton from "./DownloadCV";
+import TypewriterText from "./TypewriterEffect";
+import ContactModal from "./ContactModal";
 
 const HeaderJumbotron = () => {
+    const [showModal, setShowModal] = useState(false);
     return (
         <div className="flex flex-col sm:flex-row items-center sm:min-h-screen w-full gap-4 sm:gap-8 p-6">
             {/* 1st Column: Centered Text */}
@@ -20,9 +23,15 @@ const HeaderJumbotron = () => {
                     Hey there, I'm{" "}
                     <span className="text-gray-600 font-bold">Lex</span>.
                 </p>
-                <p className="text-xl text-center font-medium">
-                    IT Support / Frontend Web Developer
-                </p>
+                <div className="flex flex-col">
+                    <TypewriterText
+                        texts={[
+                            "IT Support Specialist",
+                            "Frontend Web Developer",
+                        ]}
+                    />
+                </div>
+
                 <div className="flex flex-col gap-4 bg-gray-50 p-4 rounded-md">
                     <span className="text-sm">
                         I specialize in providing reliable IT support and
@@ -31,13 +40,19 @@ const HeaderJumbotron = () => {
                         technical issues, I ensure systems run efficiently and
                         users stay productive.{" "}
                     </span>
-                    <div className="flex flex-row gap-4">
+                    <div className="flex flex-row gap-4 justify-center">
                         <button
+                            onClick={() => setShowModal(true)}
                             className="bg-gray-800 text-white p-2 rounded-md text-sm"
                             type="submit"
                         >
                             Let's connect
                         </button>
+
+                        <ContactModal
+                            isOpen={showModal}
+                            onClose={() => setShowModal(false)}
+                        />
                         <DownloadCVButton />
                     </div>
                 </div>
