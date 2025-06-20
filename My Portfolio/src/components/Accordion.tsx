@@ -30,7 +30,7 @@ export const AccordionItem = ({
                 />
             </button>
             {isOpen && (
-                <div className="p-4 border-t border-gray-400 dark:border-gray-700 text-gray-600 dark:text-gray-300">
+                <div className="p-2 border-t border-gray-400 dark:border-gray-700 text-gray-600 dark:text-gray-300">
                     {children}
                 </div>
             )}

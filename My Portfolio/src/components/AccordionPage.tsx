@@ -3,7 +3,7 @@ import { AccordionItem } from "../components/Accordion";
 
 const MyAccordionPage = () => {
     return (
-        <div className="max-w-2xl mx-auto mt-4">
+        <div className="w-full">
             <AccordionItem title="Job description">
                 <p className="mb-2 text-sm">
                     Global IT support for our client via Phone, Email, Remote
@@ -13,7 +13,7 @@ const MyAccordionPage = () => {
 
                 {/* Nested Accordion */}
                 <div className="mt-4">
-                    <AccordionItem title="Tasks">
+                    <AccordionItem title="Skills used">
                         <p>
                             Flowbite is MIT licensed, while Tailwind UI is a
                             paid product.

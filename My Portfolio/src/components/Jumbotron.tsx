@@ -3,12 +3,12 @@ import MyAccordionPage from "./AccordionPage";
 const Jumbotron = () => {
     return (
         <div className="p-6">
-            <h2 className="text-center mb-6 text-gray-900 font-semibold bg-gray-200 border border-white rounded-lg py-2">
+            <h2 className="flex items-center justify-center gap-2 text-center text-xl mb-6 text-white font-semibold py-2">
                 My Work Experience
             </h2>
             <ol className="relative border-s border-gray-200 dark:border-gray-700">
-                <li className="mb-8 ms-8">
-                    <span className="absolute flex items-center justify-center w-6 h-6 bg-gray-200 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <li className="flex flex-col gap-2 mb-8 ms-8">
+                    <span className="absolute flex items-center justify-center w-4 h-4 bg-gray-200 rounded-full -start-2 mt-2 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                         <svg
                             className="w-4 h-4 text-white-800"
                             aria-hidden="true"
@@ -31,7 +31,6 @@ const Jumbotron = () => {
                     <span className="text-white text-sm font-light">
                         April 04, 2025
                     </span>
-                    <MyAccordionPage />
                 </li>
                 <li className="mb-10 ms-6">
                     <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
